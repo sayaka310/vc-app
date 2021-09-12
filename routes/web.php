@@ -13,14 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 // Route::Httpメゾッド(URI,ACTION);
-Route::get('/route/hello', function () {
+Route::get('/', function () {
     return '<h1>Hell from Route!';
 });
-
+h
 Route::get('view/hello', function () {
     return view('message.hello');
 
@@ -48,3 +46,5 @@ Route::get('/controller/word/{msg}', [App\Http\Controllers\MessageController::cl
 Route::get('/controller/word/{name}/{msg}', [App\Http\Controllers\MessageController::class, 'word2']);
 
 Route::get('/language', [App\Http\Controllers\LanguageController::class,'index' ]);
+
+
