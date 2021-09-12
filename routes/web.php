@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 // Route::Httpメゾッド(URI,ACTION);
 Route::get('/', function () {
-    return '<h1>Hell from Route!';
+    return '<h1>Hell from Route!</h1>';
 });
-h
+
 Route::get('view/hello', function () {
     return view('message.hello');
 
